@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_addIcon_to_homeIcon" type="id" />
+    <item name="action_fragment_food_First_to_fragment_food_second" type="id" />
+    <item name="action_homeIcon_to_addIcon" type="id" />
+</resources>

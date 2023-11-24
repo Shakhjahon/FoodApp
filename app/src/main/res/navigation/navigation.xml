@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeIcon">
+
+    <fragment
+        android:id="@+id/homeIcon"
+        android:name="com.example.foodapp.fragments.fragment_Food_First"
+        android:label="fragment_food__first"
+        tools:layout="@layout/fragment_food__first" >
+        <action
+            android:id="@+id/action_homeIcon_to_addIcon5"
+            app:destination="@id/addIcon" />
+    </fragment>
+    <fragment
+        android:id="@+id/addIcon"
+        android:name="com.example.foodapp.fragments.fragment_Food_Second"
+        android:label="fragment_food_second"
+        tools:layout="@layout/fragment_food_second" >
+
+        <action
+            android:id="@+id/action_addIcon_to_homeIcon2"
+            app:destination="@id/homeIcon" />
+        <action
+            android:id="@+id/action_addIcon_to_fragment_four"
+            app:destination="@id/fragment_four" />
+    </fragment>
+    <fragment
+        android:id="@+id/vectorIcon"
+        android:name="com.example.foodapp.fragments.fragment_Food_Third"
+        android:label="fragment_food_third"
+        tools:layout="@layout/fragment_food_third" />
+    <fragment
+        android:id="@+id/fragment_four"
+        android:name="com.example.foodapp.fragments.fragment_four"
+        android:label="fragment_four"
+        tools:layout="@layout/fragment_four" >
+        <action
+            android:id="@+id/action_fragment_four_to_addIcon"
+            app:destination="@id/addIcon" />
+        <action
+            android:id="@+id/action_fragment_four_to_vectorIcon"
+            app:destination="@id/vectorIcon" />
+    </fragment>
+</navigation>

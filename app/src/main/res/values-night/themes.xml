@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FoodApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+         <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <style name="Theme.FoodApp" parent="Base.Theme.FoodApp" >
+
+        <item name="foodBackround">@color/gray</item>
+        <item name="background">@color/white</item>
+        <item name="salat">@color/white</item>
+
+
+    </style>
+
+</resources>
